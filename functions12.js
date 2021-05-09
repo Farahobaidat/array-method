@@ -6,16 +6,24 @@ console.log(containsZero(array));
 
 
 
-function allPositive(arr){
-let positivenumber=arr.filter(value=> value>=0);
-if (arr.length==positivenumber.length)
-    return true;
+// function allPositive(arr){
+// let positivenumber=arr.filter(value=> value>=0);
+// if (arr.length==positivenumber.length)
+//     return true;
 
-return false;
+// return false;
+
+// }
+// let array1=[1,8,18,9,10];
+// console.log(allPositive(array1));
+
+function allPositive(arr){
+return arr.every(value=>value>=0);
 
 }
-let array1=[1,8,18,9,10];
+let array1=[1,8,-18,9,10];
 console.log(allPositive(array1));
+
 
 
 function joinStrings(arr,symbol){
